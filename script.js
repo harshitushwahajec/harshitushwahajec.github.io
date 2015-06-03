@@ -80,69 +80,134 @@ $(document).ready(function(){
 	});
 
 	$( "#dialog-link, #icons li" ).hover(
-	function() {
-		$( this ).addClass( "ui-state-hover" );
-	},
-	function() {
-		$( this ).removeClass( "ui-state-hover" );
-	}
-);
-var brnch = null;
-var ssem = null;
-
-function selectSub(brnch,sem)
-{
-
-
-	if(brnch == "ce"||brnch == "mech"||brnch == "cse")
-	{	
-		if(sem==1){
-		console.log("if 1");
-		$('#subject').empty();
-		$('#subject').append(new Option('Select Subject','null'));
-		$('#subject').append(new Option('Engineering Physics','PH01'));
-		$('#subject').append(new Option('Engineering Mathematics-1','MA01'));
-		$('#subject').append(new Option('Basic Mechanical Engg.','ME01'));
-		$('#subject').append(new Option('Basic Civil Engg.','CE09'));
-		$('#subject').append(new Option('Basic Computer Prog.','CS03'));
+		function() {
+			$( this ).addClass( "ui-state-hover" );
+		},
+		function() {
+			$( this ).removeClass( "ui-state-hover" );
 		}
-		if(sem==2)
-		{
-			console.log("if2");
-		$('#subject').empty();
-		$('#subject').append(new Option('Select Subject','null'));
-		$('#subject').append(new Option('Engineering Chemistry','CH01'));
-		$('#subject').append(new Option('Engineering Mathematics-2','MA02'));
-		$('#subject').append(new Option('Engg. Graphics','ME03'));
-		$('#subject').append(new Option('Basic Elecrical & Electronics Engg','EE56'));
-		$('#subject').append(new Option('Communication Skills','HS01'));
-		}
-	}
+	);
+	var brnch = null;
+	var ssem = null;
 
-	else
+	function selectSub(brnch,sem)
 	{
-		console.log("else part");
-		$('#subject').empty();
-		$('#subject').append(new Option('Select Subject','null'));
+
+
+		if(brnch == "ce"||brnch == "mech"||brnch == "cse")
+		{	
+			if(sem==1){
+				$('#subject').empty();
+				$('#subject').append(new Option('Select Subject','null'));
+				$('#subject').append(new Option('Engineering Physics','PH01'));
+				$('#subject').append(new Option('Engineering Mathematics-1','MA01'));
+				$('#subject').append(new Option('Basic Mechanical Engg.','ME01'));
+				$('#subject').append(new Option('Basic Civil Engg.','CE09'));
+				$('#subject').append(new Option('Basic Computer Prog.','CS03'));
+			}
+			if(sem==2)
+			{
+				$('#subject').empty();
+				$('#subject').append(new Option('Select Subject','null'));
+				$('#subject').append(new Option('Engineering Chemistry','CH01'));
+				$('#subject').append(new Option('Engineering Mathematics-2','MA02'));
+				$('#subject').append(new Option('Engg. Graphics','ME03'));
+				$('#subject').append(new Option('Basic Elecrical & Electronics Engg','EE56'));
+				$('#subject').append(new Option('Communication Skills','HS01'));
+			}
+		}
+
+		if(brnch == "ip"||brnch == "it"||brnch == "ec"||brnch == "ee")
+		{	
+			if(sem==1)
+			{
+				$('#subject').empty();
+				$('#subject').append(new Option('Select Subject','null'));
+				$('#subject').append(new Option('Engineering Chemistry','CH01'));
+				$('#subject').append(new Option('Engineering Mathematics-2','MA02'));
+				$('#subject').append(new Option('Engg. Graphics','ME03'));
+				$('#subject').append(new Option('Basic Elecrical & Electronics Engg','EE56'));
+				$('#subject').append(new Option('Communication Skills','HS01'));
+			}
+			if(sem==2)
+			{
+				$('#subject').empty();
+				$('#subject').append(new Option('Select Subject','null'));
+				$('#subject').append(new Option('Engineering Physics','PH01'));
+				$('#subject').append(new Option('Engineering Mathematics-1','MA01'));
+				$('#subject').append(new Option('Basic Mechanical Engg.','ME01'));
+				$('#subject').append(new Option('Basic Civil Engg.','CE09'));
+				$('#subject').append(new Option('Basic Computer Prog.','CS03'));
+			}
+			
+		}
+		
+		
+
+		else if(brnch=="cse")
+		{
+			if(sem==3)
+			{
+				$('#subject').empty();
+				$('#subject').append(new Option('Select Subject','null'));
+				$('#subject').append(new Option('EEES','PH01'));
+				$('#subject').append(new Option('Engineering Mathematics-3','MA03'));
+				$('#subject').append(new Option('Data Structures','ME01'));
+				$('#subject').append(new Option('Object Oriented Programming','CE09'));
+				$('#subject').append(new Option('Electrical and Digital Circuits','CS03'));
+			
+			}
+			if(sem==4)
+			{
+				$('#subject').empty();
+				$('#subject').append(new Option('Select Subject','null'));
+				$('#subject').append(new Option('Analysis and Design of Algorithms','PH01'));
+				$('#subject').append(new Option('Discrete Structures','MA03'));
+				$('#subject').append(new Option('Principles of Communication','ME01'));
+				$('#subject').append(new Option('Database Management System','CE09'));
+				$('#subject').append(new Option('Computer Architecture','CS03'));
+			
+			}
+		}
+
+		else
+		{
+			$('#subject').empty();
+			$('#subject').append(new Option('Select Subject','null'));
+		}
 	}
-}
 
-$('#branch').change(function(){
-	brnch = $(document).find('#branch option:selected').val();
-	selectSub(brnch,sem);
-	console.log(brnch+' '+sem );
-});
+	$('#branch').change(function(){
+		brnch = $(document).find('#branch option:selected').val();
+		selectSub(brnch,sem);
+	});
 
 
-$('#sem').change(function(){
-	sem = $(document).find('#sem option:selected').val();
-	selectSub(brnch,sem);
-	console.log(brnch+' '+sem );
-	
+	$('#sem').change(function(){
+		sem = $(document).find('#sem option:selected').val();
+		selectSub(brnch,sem);
+	});
 
-	
+	var search;
 
-});
+	$('.search-button').click(function(){
+		search = $('#search-box').val();
+
+	});
+
+
+	var logged=false;
+
+
+
+
+
+
+
+
+
+
+
 
 
 
