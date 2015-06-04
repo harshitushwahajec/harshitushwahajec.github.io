@@ -1,14 +1,17 @@
 $(document).ready(function(){
 	$('.box-2').hide();
 	$('#prev').css({"opacity":"0.3"});
-	$('.option li:nth-child(2)').css({"font-size":"16","opacity":"0.3"});
+	$('.option li:nth-child(2)').css({"font-size":"14pt","opacity":"0.3"});
 	$('.option li:nth-child(1)').css({"text-align":"center"});
+	$('.sell').animate({opacity:'0'},0);
+	$('.sell').animate({right:'4vw'},10);
+
 
 	function changeToTwo()
 	{
 		$('.box-1').hide('slide', {direction: 'left'}, 500);
 		$('.box-2').show('slide', {direction: 'right'}, 500);
-		$('.option li:nth-child(1)').animate({fontSize:'16',opacity:'0.3'});
+		$('.option li:nth-child(1)').animate({fontSize:'14pt',opacity:'0.3'});
 		$('.option li:nth-child(2)').animate({fontSize:'24',opacity:'1'});
 		$('#next').animate({opacity:'0.3'});
 		$('#prev').animate({opacity:'1'});
@@ -18,7 +21,7 @@ $(document).ready(function(){
 	{
 		$('.box-2').hide('slide', {direction: 'right'}, 500);
 		$('.box-1').show('slide', {direction: 'left'}, 500);
-		$('.option li:nth-child(2)').animate({fontSize:'16',opacity:'0.3'});
+		$('.option li:nth-child(2)').animate({fontSize:'14pt',opacity:'0.3'});
 		$('.option li:nth-child(1)').animate({fontSize:'24',opacity:'1'});
 		$('#prev').animate({opacity:'0.3'});
 		$('#next').animate({opacity:'1'});
@@ -44,13 +47,14 @@ $(document).ready(function(){
 	    	case 37: changeToOne();
 	    	break;
 
-	        case 38: $('html, body').animate({scrollTop: 0}, 800);
+	        case 38: $('html, body').animate({scrollTop: 0}, 800); $('.bar').animate({opacity:'1'},1000); $('.sell').animate({opacity:'0'}); 
 	        break;
 
 	        case 39: changeToTwo(); 
 	        break;
 
-	        case 40: $('html, body').animate({scrollTop: ($(document).height()*0.5)}, 800);
+	        case 40: $('html, body').animate({scrollTop: ($(window).height()*1)}, 800); $('.bar').animate({opacity:'0'}); 
+	$('.sell').animate({right:'3vw'},10);$('.sell').animate({opacity:'0.8'});
 	        break;
 
 	        default: return; 
@@ -199,6 +203,15 @@ $(document).ready(function(){
 	var logged=false;
 
 
+	$('.sell').hover(function(){
+		$('.sell').animate({opacity:'1'},100);
+		$(this).animate({right:'4vw'});
+		
+	},function(){
+
+		$('.sell').animate({opacity:'0.8'},100);
+		$(this).animate({right:'3vw'});
+	});
 
 
 
