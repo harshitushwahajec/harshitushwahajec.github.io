@@ -54,7 +54,7 @@ $(document).ready(function(){
 	        break;
 
 	        case 40: $('html, body').animate({scrollTop: ($(window).height()*0.9)}, 800); $('.bar').animate({opacity:'0'}); 
-	$('.sell').animate({right:'3vw'},10);$('.sell').animate({opacity:'0.8'});
+	$('.sell').animate({right:'3vw'},10); $('.sell').animate({opacity:'0.8'});
 	        break;
 
 	        default: return; 

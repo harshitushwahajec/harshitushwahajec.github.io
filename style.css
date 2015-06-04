@@ -69,12 +69,12 @@ body{
 .jumbo-right
 {
 	position: relative;
-	margin-left: -100%;
+	margin-left: -100vw;
 	display: block;
 	float:right;
-	min-width:40%;
-	margin-right: 12%;
-	margin-top: 7%;
+	max-width:30vw;
+	margin-right: 12vw;
+	margin-top: 10vh;
 }
 
 .jumbo-right h1
@@ -87,7 +87,7 @@ body{
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 500;
-	line-height: 38.4000015258789px;
+	line-height: 36.4000015258789px;
 }
 
 .button
@@ -112,6 +112,8 @@ body{
 
 .jumbo-right h3
 {
+	margin-top: -0.2vh;
+	float:right;
 	color: #FFFFFF;
 	line-height: 0px;
 	padding-bottom: 20px;
@@ -347,7 +349,13 @@ select:hover
   height:50px;
   width:50px;
   background-image: url('arrow2.jpg');
-  -webkit-animation:bounce 1s infinite;
+  -webkit-animation: bounce 1s infinite;
+  -moz-animation: bounce 1s infinite;
+  -o-animation: bounce 1s infinite;
+  -ms-animation: bounce 1s infinite;
+  animation: bounce 1s infinite;
+
+
 }
 
 @-webkit-keyframes bounce {
@@ -369,6 +377,62 @@ select:hover
   }
 }
 
+@-moz-keyframes bounce {
+  0%{
+    bottom:5px;
+  }
+  
+  25%, 75% {
+    bottom:15px;
+  }
+  
+  
+  50% {
+    bottom:20px;
+  }
+  
+  100% {
+    bottom:0;
+  }
+}
+
+@-o-keyframes bounce {
+  0%{
+    bottom:5px;
+  }
+  
+  25%, 75% {
+    bottom:15px;
+  }
+  
+  
+  50% {
+    bottom:20px;
+  }
+  
+  100% {
+    bottom:0;
+  }
+}
+
+@-ms-keyframes bounce {
+  0%{
+    bottom:5px;
+  }
+  
+  25%, 75% {
+    bottom:15px;
+  }
+  
+  
+  50% {
+    bottom:20px;
+  }
+  
+  100% {
+    bottom:0;
+  }
+}
 
 
 .sell
@@ -393,4 +457,14 @@ select:hover
 	right: 0vw;
 	min-height: 5vw;
 	box-shadow: -5px -5px 10px #E0E0E0;
+}
+
+span
+{
+	color:#ffffff;
+	padding-top: 2vh;
+	font-size: 0.9em;
+	font-family: sans-serif;
+	font-weight: 600;
+	font-family: 'Century Gothic';
 }
