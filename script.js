@@ -53,7 +53,7 @@ $(document).ready(function(){
 	        case 39: changeToTwo(); 
 	        break;
 
-	        case 40: $('html, body').animate({scrollTop: ($(window).height()*1)}, 800); $('.bar').animate({opacity:'0'}); 
+	        case 40: $('html, body').animate({scrollTop: ($(window).height()*0.9)}, 800); $('.bar').animate({opacity:'0'}); 
 	$('.sell').animate({right:'3vw'},10);$('.sell').animate({opacity:'0.8'});
 	        break;
 
@@ -63,7 +63,8 @@ $(document).ready(function(){
 	});
 
 	$(".button").click(function(){
-		 $('html, body').animate({scrollTop: ($(document).height()*0.5)}, 800);
+		$('html, body').animate({scrollTop: ($(window).height()*0.9)}, 800); $('.bar').animate({opacity:'0'}); 
+	$('.sell').animate({right:'3vw'},10);$('.sell').animate({opacity:'0.8'});
 	});
 
 	$(this).scroll(function(){
