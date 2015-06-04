@@ -193,6 +193,10 @@ hr
 .main-body
 {
 	min-height: 80vh;
+	background-image: url('5299_Domino-of-books-HD-wallpaper.jpg');
+	background-size:35vw;
+	background-repeat: no-repeat;
+	background-position:left;
 }
 
 .option
@@ -342,7 +346,7 @@ select:hover
   margin-left:-25px;
   height:50px;
   width:50px;
-  background-image: url('arrow.jpg');
+  background-image: url('arrow2.jpg');
   -webkit-animation:bounce 1s infinite;
 }
 
