@@ -18,8 +18,8 @@ echo "Connected successfully";
 <head>
 <title>Biblio | JecX</title>
 <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="style_below500.css" media="screen and (max-width:500px)">
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="style_below750.css" media="screen and (max-width:750px)">
 <script src="jquery.min.js"></script>
 <script src="jquery-ui.js"></script>
 <script src="script.js"></script>
@@ -30,6 +30,67 @@ echo "Connected successfully";
 <body>
 
 
+
+	<div class="overlay"></div>
+	<div class="login">
+		<div id="close" style="margin-right:1vh; float:right;" href="#">&#10006;</div>
+		<div id="vr" style="position:fixed;height:60vh; width:0px; border-style:solid; border-width:1px; margin-left:39vw; margin-top:5vh; border-color:#aaaaaa;border-radius:1px;"></div>
+		<div class="log-left">
+			<h1>Login</h1>
+			<form>
+				<table style="width:100%;">
+					<tr style="height:5vh;">
+						<td style="padding-left:5vw;width:40%">Username</td>
+						<td><input placeholder="Email ID / Mobile" name="log-user"></td>
+					</tr>
+					<tr style="height:5vh;">
+						<td style="padding-left:5vw;">Password</td>
+						<td><input placeholder="Password" style="width:80%;" type="password" name="log-pass"></td>
+					</tr>
+				</table>
+				<br>
+				<center><input id="login-button" type="submit" value="LOGIN"></center>
+				
+			</form>
+		</div>
+
+
+		<div class="log-right">
+			<h1>Register</h1>
+			<form>
+				<table style=" width:100%;">
+					<tr style="height:5vh;">
+						<td style="padding-left:2vw; width:50%">Full Name</td>
+						<td><input placeholder="First Name + Last Name" style="width:80%;" name="log-user"></td>
+					</tr>
+					<tr style="height:5vh;">
+						<td style="padding-left:2vw;">Email ID</td>
+						<td><input placeholder="someone@domain.com" style="width:80%;" name="log-user"></td>
+					</tr>
+					<tr style="height:5vh;">
+						<td style="padding-left:2vw;">Mobile Number</td>
+						<td><input placeholder="+91XXXXXXXXXX" style="width:80%;" name="log-user"></td>
+					</tr>
+					<tr style="height:5vh;">
+						<td style="padding-left:2vw;">College</td>
+						<td><select style="height:60%; border-radius:5px; width:90%; font-size:18; color: #2996CC; border-color: #E0E0E0; border-width: 1px;">
+							<option>JEC</option><option>Other</option></select></td>
+					</tr>
+					<tr style="height:5vh;">
+						<td style="padding-left:2vw;">Password</td>
+						<td><input placeholder="Password" style="width:80%;" type="password" name="log-pass"></td>
+					</tr>
+					<tr style="height:5vh;">
+						<td style="padding-left:2vw;">Confirm Password</td>
+						<td><input placeholder="Re-enter Password" style="width:80%;" type="password" name="log-pass"></td>
+					</tr>
+				</table>
+				<br>
+				<center><input id="reg-button" type="submit" value="SIGNUP"></center>
+			</form>
+
+		</div>
+	</div>
 
 
 
@@ -46,18 +107,18 @@ echo "Connected successfully";
 
 		<img id="bird" src="Screenshot (15).png" style=" margin-top:10px; margin-left:10%;">
 		<div class="jumbo-right">
-			<h1 align="right">Sell your Old Books.</h1>
-			<h3 align="right">No Fees, No Charges, Hassle free Deals.</h3>
+			<h1>Sell your Old Books.</h1>
+			<h3>No Fees, No Charges, Hassle free Deals.</h3>
 			<a class="button" href="#">GET STARTED</a>
 		</div>
 
 	</div>
 
 	<div class="jumbo-bottom">
-		<br><ul><li id="o">OVERVIEW</li><li id="f">FEATURES</li></ul>
+		<ul><li id="o">OVERVIEW</li><li id="f">FEATURES</li></ul>
 	</div>
 	<div class="jumbo-bottom-fixed">
-		<ul style="margin-top:20px;"><li id="o">OVERVIEW</li><li style="margin-left:110px;">FEATURES</li></ul>
+		<ul ><li id="o">OVERVIEW</li><li style="margin-left:110px;">FEATURES</li></ul>
 		<img src="Screenshot (10).png" style="height:7vh; margin-left:45.5%; margin-top:7px;">
 		<a class="button2" href="#">DASHBOARD</a>
 		

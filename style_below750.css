@@ -1,0 +1,52 @@
+body
+{
+	overflow: visible;
+}
+
+.jumbo-top, #bird, .jumbo-bottom
+{
+	visibility: hidden;
+	max-height: 0;
+	max-width: 00vw;
+	margin: 0;
+	padding: 0;
+}
+
+.jumbo-right
+{
+	width:100vw;
+	margin: 0;
+	float:none;
+}
+.jumbo-right h1
+{
+	margin-top: 5vh;
+	font-size: 7vw;
+	float:none;
+	width:100vw;
+	text-align: center;
+	
+}
+.jumbo-right h3
+{
+	font-size: 5vw;
+	float:none;
+	width:100vw;
+	text-align: center;
+	
+}
+.button
+{
+	float: none;
+
+}
+
+.jumbo-bottom-fixed
+{
+	visibility: visible;
+}
+
+.jumbo-bottom-fixed ul, .button2
+{
+	visibility: hidden;
+}

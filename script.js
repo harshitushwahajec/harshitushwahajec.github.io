@@ -6,6 +6,21 @@ $(document).ready(function(){
 	$('.sell').animate({opacity:'0'},0);
 	$('.sell').animate({right:'4vw'},10);
 
+	function scroll_down()
+	{
+		$('html, body').animate({scrollTop: ($(window).height()*0.9)}, 800); 
+		$('.bar').animate({opacity:'0'}); 
+		$('.sell').animate({right:'3vw'},10); 
+		$('.sell').animate({opacity:'0.8'});
+	}
+
+	function scroll_up()
+	{
+		 $('html, body').animate({scrollTop: 0}, 800); 
+		 $('.bar').animate({opacity:'1'},1000); 
+		 $('.sell').animate({opacity:'0'}); 
+	}
+
 
 	function changeToTwo()
 	{
@@ -41,26 +56,39 @@ $(document).ready(function(){
 		changeToOne();
 	});
 
+
 	$(document).keydown(function(e) {
 	    switch(e.which) {
 
 	    	case 37: changeToOne();
 	    	break;
 
-	        case 38: $('html, body').animate({scrollTop: 0}, 800); $('.bar').animate({opacity:'1'},1000); $('.sell').animate({opacity:'0'}); 
+	        case 38: scroll_up();
 	        break;
 
 	        case 39: changeToTwo(); 
 	        break;
 
-	        case 40: $('html, body').animate({scrollTop: ($(window).height()*0.9)}, 800); $('.bar').animate({opacity:'0'}); 
-	$('.sell').animate({right:'3vw'},10); $('.sell').animate({opacity:'0.8'});
+	        case 40: scroll_down();
 	        break;
 
 	        default: return; 
 	    }
 	    e.preventDefault(); 
 	});
+
+	$('.jumbo-top li:nth-child(1), .button2').click(function(){
+		$('.overlay').css({"visibility":"visible"});
+		$('.login').css({"visibility":"visible"});
+	});
+
+	$('#close').click(function(){
+		$('.overlay').css({"visibility":"hidden"});
+		$('.login').css({"visibility":"hidden"});
+		scroll_up();
+	});
+
+	$(".bar").click(function(){ scroll_down();});
 
 	$(".button").click(function(){
 		$('html, body').animate({scrollTop: ($(window).height()*0.9)}, 800); $('.bar').animate({opacity:'0'}); 
@@ -216,10 +244,13 @@ $(document).ready(function(){
 
 
 
-
-
-
-
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
 
 
 
