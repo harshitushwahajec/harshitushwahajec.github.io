@@ -1,0 +1,307 @@
+body 
+{
+	overflow: hidden;
+	margin: 0;
+}
+
+
+.jumbo-bottom-fixed
+{
+	top: 0px;
+	position: fixed;
+	width: 100%;
+	background-color: #FAFAFA;
+	min-height: 10vh;
+	max-height: 10vh;
+	border-bottom-style: solid;
+	border-bottom-color: #E0E0E0;
+	border-bottom-width: 0px;
+	box-shadow: 1px 1px 7px #E0E0E0;
+}
+
+.jumbo-bottom-fixed ul
+{
+	margin-top:0px;
+	position: fixed;
+	max-height: 10vh;
+	float: left;
+	min-height: 10vh;
+	display: inline;
+	margin-left: 10%;
+	padding-top: 3.5vh;
+}
+.jumbo-bottom-fixed li 
+{
+	position: fixed;
+	color: #5F6A7D;
+	font-size: 0.75em;
+	font-family: sans-serif;
+	display: inline;
+	padding-right: 50px;
+	font-weight: 800;
+}
+
+.jumbo-bottom-fixed .button2
+{
+
+	padding: 15px;
+	border-radius: 3px;
+	font-size: 0.7em;
+	font-family: sans-serif;
+	font-weight: 800;
+	padding-left: 40px;
+	padding-right: 40px;
+	float: right;
+	text-decoration: none;
+	text-decoration: none;
+	margin-left: 20%;
+	position: fixed;
+	margin-top: 2vh;
+	margin-right: 5%;
+	background-color: #2996CC;
+	color: #ffffff;
+}
+.jumbo-bottom-fixed .button2:hover
+{
+	color: #D4F4FF;
+}
+
+span
+{
+	color:#ffffff;
+	padding-top: 2vh;
+	font-size: 0.9em;
+	font-family: sans-serif;
+	font-weight: 600;
+	font-family: 'Century Gothic';
+}
+
+h1
+{	
+	margin-top: 13vh;
+	text-align: center;
+	color: #2996CC;
+	font-family: 'Century Gothic';
+	font-size: 24;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 36.4000015258789px;
+}
+
+.wrapper
+{	
+
+	height:210vh;
+	width:95vw;
+	margin-top: 5vh; 
+}
+.sell
+{
+	float: left;
+	height: 43%;
+	width: 49%;
+	background-image: url('how/2f5ed4d6e3e8eb7e671a57dbc4237e2efc.png'); 
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.buy
+{
+	float: right;
+	height: 43%;
+	width: 49%;
+	background-image: url('how/2f3c68ed01fe49f638f27c93bbecfcc627.png'); 
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+#tag-1
+{	
+	margin-top: 5px;
+	float: right;
+	height:100px;
+	width:600px;
+	background-position: right;
+	background-image: url('how/2f276cfe2b98bf62e233eb1acccd313eb6.png');	
+	background-repeat: no-repeat;
+}
+#tag-2
+{
+	float: left;
+	height:100px;
+	width:600px;
+	background-position: left;
+	background-image: url('how/2f72f247dcc617bfcb3c4b23657b7bd127.png');	
+	background-repeat: no-repeat;
+}
+
+#vl-1
+{
+	margin-top: 81px;
+	width: 1px;
+	margin-left: -3px;
+	float: right;
+	height:100%;
+	border-right-style: solid;
+	border-right-width: 2px; 
+	border-right-color:#dfe6ed;
+}
+#vl-2
+{
+	margin-top: 69px;
+	width: 1px;
+	margin-right: -3px;
+	float: left;
+	height:100%;
+	border-left-style: solid;
+	border-left-width: 2px; 
+	border-left-color:#addc90; 
+}
+
+#tag-12
+{
+	float: right;
+	height: 40px;
+	width: 100px;
+	background-position: right;
+	background-repeat: no-repeat;
+	background-image: url('how/2f74ed185a6f3225a7029b6d29dc0f4aeb.png');
+}
+
+#tag-22
+{
+	float: left;
+	height: 40px;
+	width: 100px;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-image: url('how/2f44437a1f147bfef64602f624cd440141.png');
+}
+
+.text-left
+{
+	padding-top: 3px;
+	text-align: center;
+	float:right;
+	margin-top: 23px;
+	width:200px;
+	height: 30px;
+	background-color: #dfe6ed;
+	font-size: 1.2em;
+	font-family: sans-serif;
+	font-weight: 200;
+	border-radius: 5px;
+	font-family: 'Century Gothic';
+}
+
+.text-right
+{
+	color: #ffffff;
+	padding-top: 3px;
+	text-align: center;
+	float:left;
+	margin-top: 23px;
+	width:200px;
+	height: 30px;
+	background-color: #addc90; 
+	font-size: 1.2em;
+	font-family: sans-serif;
+	font-weight: 200;
+	border-radius: 5px;
+	font-family: 'Century Gothic';
+}
+
+
+.bounce {
+  position:fixed;
+  left:90%;
+  margin-top:-45px;
+  margin-left:-25px;
+  height:50px;
+  width:50px;
+  background-image: url('arrow2.jpg');
+  -webkit-animation: bounce 1s infinite;
+  -moz-animation: bounce 1s infinite;
+  -o-animation: bounce 1s infinite;
+  -ms-animation: bounce 1s infinite;
+  animation: bounce 1s infinite;
+
+
+}
+
+@-webkit-keyframes bounce {
+  0%{
+    bottom:30px;
+  }
+  
+  25%, 75% {
+    bottom:40px;
+  }
+  
+  
+  50% {
+    bottom:45px;
+  }
+  
+  100% {
+    bottom:25px;
+  }
+}
+
+@-moz-keyframes bounce {
+ 0%{
+    bottom:30px;
+  }
+  
+  25%, 75% {
+    bottom:40px;
+  }
+  
+  
+  50% {
+    bottom:45px;
+  }
+  
+  100% {
+    bottom:25px;
+  }
+}
+
+@-o-keyframes bounce {
+  0%{
+    bottom:30px;
+  }
+  
+  25%, 75% {
+    bottom:40px;
+  }
+  
+  
+  50% {
+    bottom:45px;
+  }
+  
+  100% {
+    bottom:25px;
+  }
+}
+
+@-ms-keyframes bounce {
+ 0%{
+    bottom:30px;
+  }
+  
+  25%, 75% {
+    bottom:40px;
+  }
+  
+  
+  50% {
+    bottom:45px;
+  }
+  
+  100% {
+    bottom:25px;
+  }
+}

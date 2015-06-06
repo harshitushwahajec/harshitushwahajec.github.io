@@ -199,6 +199,7 @@ hr
 
 .main-body
 {
+	z-index:2;
 	min-height: 80vh;
 	background-image: url('5299_Domino-of-books-HD-wallpaper.jpg');
 	background-size:35vw;
