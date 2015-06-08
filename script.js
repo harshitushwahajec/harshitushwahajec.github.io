@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+
 	$('.box-2').hide();
 	$('#prev').css({"opacity":"0.3"});
 	$('.option li:nth-child(2)').css({"font-size":"14pt","opacity":"0.3"});
@@ -79,6 +81,18 @@ $(document).ready(function(){
 
 	$('.jumbo-bottom-fixed li:nth-child(1)').click(function(){
 		scroll_up();
+	});
+
+	$('.sell').click(function(){
+		location.href = "sell.html";
+	});
+
+	$('#about').click(function(){
+		location.href = "about.html";
+	});
+
+	$('#jec').click(function(){
+		location.href = "https://www.jecjabalpur.ac.in/";
 	});
 
 	$('.jumbo-bottom-fixed li:nth-child(2) , .jumbo-bottom li:nth-child(2)').click(function(){
