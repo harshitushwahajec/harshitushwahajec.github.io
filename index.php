@@ -1,17 +1,4 @@
-<?php
-$servername = "127.0.0.1:3306";
-$username = "root";
-$password = "harshit";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password);
-
-// Check connection
-if (mysqli_connect_error()) {
-    die("Database connection failed: " . mysqli_connect_error());
-}
-echo "Connected successfully";
-?>
 
 <!DOCTYPE HTML>
 <HTML>
@@ -93,6 +80,17 @@ h4 {
   color: #fff;
 }
 </style>
+<body>
+<div class="overlay-loading">
+
+		<div id="loader">
+		  <div id="shadow"></div>
+		  <div id="box"></div>
+		</div>
+	<h4>Wait while we Load it for You......</h4>
+
+
+</div></body>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" type="text/css" href="style_below750.css" media="screen and (max-width:750px)">
 <link href="toastr.css" rel="stylesheet"/>
@@ -106,16 +104,6 @@ h4 {
 
 <body>
 
-<div class="overlay-loading">
-
-		<div id="loader">
-		  <div id="shadow"></div>
-		  <div id="box"></div>
-		</div>
-	<h4>Wait while we Load it for You......</h4>
-
-
-</div>
 	<div class="overlay"></div>
 	<div class="login">
 		<div id="close" style="margin-right:1vh; float:right;" href="#">&#10006;</div>

@@ -1,10 +1,8 @@
 body 
 {
 	margin: 0;
-	background-image: url('manuais.jpg');
-	background-repeat: no-repeat;
-	background-position: bottom left;
 	max-width: 100vw;
+	height: 109vh;
 }
 
 
@@ -90,83 +88,4 @@ h1
 	font-variant: normal;
 	font-weight: 500;
 	line-height: 36.4000015258789px;
-}
-
-.wrapper
-{	
-	height:60vh;
-	width:95vw;
-	margin-top: 5vh; 
-	overflow: auto;
-}
-.left
-{
-	width:25%;
-	text-align: right;
-	color: #2996CC;
-	font-family: 'Century Gothic';
-	font-size: 18;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 36.4000015258789px;
-}
-table
-{
-	color: #2996CC;
-	font-family: 'Century Gothic';
-	font-size: 18;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-}
-input,select
-{
-	color: #2996CC;
-	font-family: 'Century Gothic';
-	font-size: 18;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	width:80%;
-	margin-left: 7%;
-}
-.dropzone
-{
-	width:80%;
-	margin-left: 7%;
-	text-align: center;
-	color: #2996CC;
-	font-family: 'Century Gothic';
-	font-size: 18;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 36.4000015258789px;
-}
-#button
-{	
-	width:auto;
-	height:auto;
-	padding: 10px;
-	border-radius: 3px;
-	font-size: 0.7em;
-	font-family: sans-serif;
-	font-weight: 800;
-	padding-left: 40px;
-	padding-right: 40px;
-	text-decoration: none;
-	margin-top: 1vh;
-	background-color: #2996CC;
-	color: #ffffff;
-	margin-bottom: 15vh;
-	margin-top: 5vh;
-}
-
-.cart-list
-{
-	width:30vw;
-	height: 83vh;
-	border-style: groove;
-	margin-right:-35vw;
 }

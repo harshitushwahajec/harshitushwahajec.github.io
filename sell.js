@@ -64,6 +64,9 @@ $(document).ready(function(){
 		return false;
 	});
 
+  $('img').click(function(){
+    $('.cart-list').animate({left:'35vw'});
+  })
 
 
 
